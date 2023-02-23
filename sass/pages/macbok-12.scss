@@ -1,0 +1,66 @@
+@use "../global.scss";
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: #e5e5e5;
+}
+.img__container--content {
+  h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 140%;
+    letter-spacing: 0.25px;
+    padding-top: 64px;
+    font-feature-settings: "pnum" on, "lnum" on;
+    color: #000000;
+  }
+}
+.img__container--box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 15px;
+  .items {
+    padding-top: 31px;
+    h4 {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 17px;
+      line-height: 140%;
+      letter-spacing: 0.1px;
+      font-feature-settings: "pnum" on, "lnum" on;
+    }
+    img {
+      width: 100%;
+    }
+  }
+}
+@media (min-width: 800px) {
+  .img__container--content {
+    text-align: center;
+  }
+  .img__container--box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 30px;
+  }
+  .items {
+    h4 {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 130%;
+      letter-spacing: 0.02em;
+      font-feature-settings: "pnum" on, "lnum" on;
+      color: #000000;
+      text-align: center;
+    }
+    img {
+      max-width: 264px;
+      height: 272px;
+    }
+  }
+}
