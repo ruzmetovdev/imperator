@@ -76,7 +76,6 @@
       line-height: 22px;
       letter-spacing: 0.4399999976158142px;
       color: #0d0d0d;
-     
     }
     h2 {
       font-family: sans-serif;
@@ -98,7 +97,7 @@
   .qutilar {
     display: flex;
     align-items: center;
-    margin-left: 430px;
+    margin-left: 330px;
     h5 {
       width: 37px;
       padding: 17px 13px;
@@ -136,6 +135,7 @@
     border: none;
     transition: 0.4s;
     border-radius: 2px;
+    margin-left: -200px;
     &:hover {
       background-color: #0d0d0d;
       color: #ffc000;
@@ -162,15 +162,15 @@
       padding-bottom: -29px;
     }
     img {
-position: absolute;
-margin-left: -40px;
-margin-top: -3px;
+      position: absolute;
+      margin-left: -40px;
+      margin-top: -3px;
     }
   }
 }
 
 @media (max-width: 1080px) {
-    .container {
-      width: 100%;
-    }
+  .pastki_content {
+    width: 100%;
+  }
 }
