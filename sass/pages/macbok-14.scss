@@ -1,0 +1,183 @@
+@use "../global";
+
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300;400;500;700;800&display=swap");
+
+* {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+body {
+  scroll-behavior: smooth;
+  font-family: "M PLUS 1p", sans-serif;
+}
+
+#mag {
+  padding: 112px 0px 64px 0px;
+  background: #fafafa;
+  .mag__container {
+    .mag__cont--top {
+      display: flex;
+      column-gap: 5px;
+      margin-bottom: 32px;
+      a {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 140%;
+        letter-spacing: 0.1px;
+        font-feature-settings: "pnum" on, "lnum" on;
+        color: #000000;
+        &:hover {
+          color: #ffc000;
+          transition: 0.3s;
+        }
+      }
+      p {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 140%;
+        letter-spacing: 0.1px;
+        font-feature-settings: "pnum" on, "lnum" on;
+        color: #000000;
+      }
+    }
+    .mag__cont--bottom {
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      grid-column-gap: 30px;
+      .bottom-left {
+        .acc-logo {
+          display: flex;
+          align-items: center;
+          padding-left: 17px;
+          width: 100%;
+          height: 64px;
+          background: #fff;
+          border-bottom: 2px solid #f4f5f7;
+          h3 {
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 32px;
+            font-feature-settings: "pnum" on, "lnum" on;
+            color: #000000;
+          }
+        }
+        .acc {
+          width: 264px;
+          //   height: auto;
+          .acc-item {
+            h2 {
+              button {
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 140%;
+                letter-spacing: 0.15px;
+                font-feature-settings: "pnum" on, "lnum" on;
+                color: #000000;
+              }
+            }
+            .flsh {
+              .acc-body {
+                p {
+                  font-weight: 400;
+                  font-size: 20px;
+                  line-height: 140%;
+                  letter-spacing: 0.15px;
+                  font-feature-settings: "pnum" on, "lnum" on;
+                  color: #000000;
+                }
+              }
+            }
+          }
+          .acc-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 64px;
+            padding: 0 17px;
+            background: #fff;
+            box-shadow: 0px 3px 0px #e1e1e1;
+            button {
+              width: 100%;
+              height: 40px;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 18px;
+              letter-spacing: 0.04em;
+              font-feature-settings: "pnum" on, "lnum" on;
+              color: #0d0d0d;
+              background: #ffc000;
+              border: none;
+            }
+          }
+        }
+      }
+      .bottom-right {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-column-gap: 30px;
+        .box {
+          .box-img {
+            margin-bottom: 8px;
+          }
+          .box-title {
+            p {
+              padding-bottom: 13px;
+              font-weight: 600;
+              font-size: 14px;
+              line-height: 140%;
+              letter-spacing: 0.75px;
+              text-transform: uppercase;
+              font-feature-settings: "pnum" on, "lnum" on;
+              color: #000000;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// media
+
+@media (max-width: 1280px) {
+  #mag {
+    .mag__container {
+      .mag__cont--bottom {
+        .bottom-right {
+          display: grid;
+          grid-template-columns: repeat(2, auto);
+          justify-content: center;
+        }
+        .bottom-left {
+          .acc {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1020px) {
+  #mag {
+    .mag__container {
+      .mag__cont--bottom {
+        .bottom-right {
+          display: grid;
+          grid-template-columns: repeat(1, auto);
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
