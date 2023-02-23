@@ -197,13 +197,13 @@ a {
   font-feature-settings: "pnum" on, "lnum" on;
   color: #000000;
 }
-.main__top--right .hizmatlar .hizmat__box {
-  margin-bottom: 10 px;
+.main__top--right .hizmatlar .dastafka .hizmat__box {
+  margin-bottom: 10px;
   display: flex;
   align-items: center;
   gap: 20px;
 }
-.main__top--right .hizmatlar .hizmat__box span {
+.main__top--right .hizmatlar .dastafka .hizmat__box span {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -214,6 +214,15 @@ a {
   font-feature-settings: "pnum" on, "lnum" on;
   /* Black */
   color: #0D0D0D;
+}
+
+.nav_top--bottom {
+  width: 100%;
+  display: flex;
+  display: none;
+}
+.nav_top--bottom .rasimlar {
+  width: 25%;
 }
 
 @media (min-width: 680px) {
@@ -243,5 +252,32 @@ a {
     line-height: 140%;
     font-feature-settings: "pnum" on, "lnum" on;
     color: #000;
+  }
+  .dastafka {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .nav_top--bottom {
+    display: block;
+    gap: 14px;
+  }
+  .nav_top--bottom img {
+    width: 24.4%;
+  }
+  .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
+    display: none;
+  }
+  .owl-theme .owl-dots .owl-dot span {
+    display: none;
+  }
+  .owl-theme .owl-dots .owl-dot {
+    display: none;
+  }
+  .btn1 {
+    margin-top: 60px !important;
+    width: 90% !important;
+  }
+  .btn2 {
+    width: 90% !important;
   }
 }
