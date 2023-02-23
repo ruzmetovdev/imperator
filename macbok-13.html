@@ -13,7 +13,7 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
         integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./sass/pages/macbok-13.scss">
+    <link rel="stylesheet" href="./css/compressed/macbok-13.min.css">
 </head>
 
 <body>
@@ -40,18 +40,33 @@
                 <div class="main__top--right">
                     <h2>Lorem ipsum dolor sit amet</h2>
                     <img src="./images/macbok-13/Group 24.png" alt="" class="yulduz">
-                    <div class="read__more">
-                        <div class="read__more--box">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla vitae quo aspernatur,
-                                eaque similique doloribus dolor!
-                                <span class="read__more--text">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex ut architecto harum
-                                    voluptate soluta eveniet quaerat itaque, molestias voluptatem? Esse dolores delectus
-                                    nemo ullam minus molestiae corrupti nobis minima voluptate.
+                    <div class="read-more-container">
+
+                        <div class="container-box">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam faucibus porttitor
+                                rutrum at tellus sodales libero. Eleifend non.
+                                <span class="read-more-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit odit amet tempore
+                                    architecto aut nisi deserunt a explicabo alias rerum.
                                 </span>
                             </p>
-                            <span class="read__more--btn">More...</span>
+                            <span class="read-more-btn">More...</span>
                         </div>
+
+                        <!-- <div class="container-box">
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, facere? Quae distinctio
+                                reprehenderit soluta fugiat, alias, doloremque similique tenetur magni voluptate a,
+                                perspiciatis quaerat! Necessitatibus velit consectetur expedita consequatur assumenda!
+                                <span class="read-more-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio quasi quaerat, amet
+                                    explicabo magnam, nulla porro dolorem itaque
+                                </span>
+                            </p>
+                            <span class="read-more-btn">More...</span>
+                        </div> -->
+
                     </div>
                 </div>
 
@@ -72,6 +87,25 @@
             items: 1
         })
 
+    </script>
+    <script>
+        const parentContainer = document.querySelector('.read-more-container');
+
+        parentContainer.addEventListener('click', event => {
+
+            const current = event.target;
+
+            const isReadMoreBtn = current.className.includes('read-more-btn');
+
+            if (!isReadMoreBtn) return;
+
+            const currentText = event.target.parentNode.querySelector('.read-more-text');
+
+            currentText.classList.toggle('read-more-text--show');
+
+            current.textContent = current.textContent.includes('Read More') ? "More..." : "More...";
+
+        })
     </script>
 </body>
 
