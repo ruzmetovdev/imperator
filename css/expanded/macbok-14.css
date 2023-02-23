@@ -89,6 +89,7 @@ header {
 #navbar .box .links ul {
   display: flex;
   gap: 25px;
+  padding-top: 10px;
 }
 #navbar .box .links ul a {
   font-family: "Poppins", sans-serif;
