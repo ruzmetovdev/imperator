@@ -1,0 +1,130 @@
+@use "../global.scss";
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  background-color: #e5e5e5;
+}
+.pay__container--content {
+  h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 140%;
+    letter-spacing: 0.25px;
+    font-feature-settings: "pnum" on, "lnum" on;
+    color: #000000;
+    padding-top: 34px;
+  }
+}
+.pay__container--left {
+  img {
+    display: none;
+  }
+}
+.pay__container--right {
+  padding-top: 16px;
+  #pay {
+    width: 100%;
+    height: 60px;
+    border: 1px solid #dbdee7;
+    border-radius: 6px;
+    padding-left: 16px;
+    margin-top: 16px;
+    background-color: #f1f1f1;
+  }
+  button {
+    width: 100%;
+    height: 56px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    position: relative;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    font-size: 20px;
+    overflow: hidden;
+    margin-top: 16px;
+    background: #fff;
+    color: ghostwhite;
+  }
+
+  button span {
+    position: relative;
+    z-index: 10;
+    transition: color 0.4s;
+  }
+
+  button:hover span {
+    color: black;
+  }
+
+  button::before,
+  button::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+
+  button::before {
+    content: "";
+    background: #ffc000;
+    width: 120%;
+    left: -10%;
+    transform: skew(30deg);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+  }
+
+  button:hover::before {
+    transform: translate3d(100%, 0, 0);
+  }
+}
+label {
+    display: none;
+}
+
+@media (min-width: 800px) {
+  .pay__container--content {
+    text-align: center;
+    padding-top: 64px;
+  }
+  .pay__container--box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 90px;
+    padding-top: 20px;
+  }
+  .pay__container--left {
+    img {
+      display: block;
+    }
+  }
+  .pay__container--right {
+    input:focus {
+      outline: none;
+    }
+  }
+  #pay {
+    margin-top: 32px;
+  }
+  #pay:focus {
+    border: 1.5px solid #ffc000;
+  }
+  label {
+    display: block;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    margin-top: 10px;
+    letter-spacing: 0.44px;
+    font-feature-settings: "pnum" on, "lnum" on;
+    color: #0a0a0a;
+  }
+}
