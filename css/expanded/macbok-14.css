@@ -336,6 +336,9 @@ main {
     grid-template-columns: repeat(2, auto);
     justify-content: center;
   }
+  #mag .mag__container .mag__cont--bottom .bottom-left .acc-logo {
+    width: 100%;
+  }
   #mag .mag__container .mag__cont--bottom .bottom-left .acc {
     width: 100%;
   }
