@@ -27,6 +27,7 @@ a {
 header {
   position: fixed;
   width: 100%;
+  z-index: 99;
 }
 
 #top-nav {
@@ -146,7 +147,8 @@ nav {
   transition: 0.3s;
 }
 
-.overlay a:hover, .overlay a:focus {
+.overlay a:hover,
+.overlay a:focus {
   color: #f1f1f1;
 }
 
@@ -173,4 +175,15 @@ nav {
   .tgg {
     display: none;
   }
+}
+#first {
+  padding-top: 200px;
+}
+#first h1 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  color: #000000;
+  text-align: center;
 }

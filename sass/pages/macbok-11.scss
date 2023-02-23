@@ -1,13 +1,13 @@
 @use "../global";
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 
-header{
-    position: fixed;
-    width: 100%;
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 99;
 }
 
 #top-nav {
-   
   background-color: #000;
   padding: 13px 0;
   a {
@@ -25,7 +25,8 @@ header{
 
 #navbar {
   background-color: #fff;
-  box-shadow: 0px 8px 22px -6px rgba(24, 39, 75, 0.12), 0px 14px 64px -4px rgba(24, 39, 75, 0.12);
+  box-shadow: 0px 8px 22px -6px rgba(24, 39, 75, 0.12),
+    0px 14px 64px -4px rgba(24, 39, 75, 0.12);
   transition: 0.4s;
   .box {
     display: none;
@@ -79,85 +80,92 @@ header{
           background: #ffc000;
         }
       }
-     
     }
-    @media (min-width:1000px) {
-        &{
-            display: flex;
-        }
-        
+    @media (min-width: 1000px) {
+      & {
+        display: flex;
+      }
     }
   }
 }
 nav {
-	padding: 25px 0;
+  padding: 25px 0;
 }
 
 .navbar-shrink {
-	padding: 8px 0;
+  padding: 8px 0;
 }
 
 // toggle----------------
 .overlay {
-    height: 100%;
-    width: 0;
-    position: fixed; 
-    z-index: 1; 
-    left: 0;
-    top: 0;
-    background-color: rgb(0,0,0); 
-    background-color: rgba(0,0,0, 0.9); 
-    overflow-x: hidden; 
-    transition: 0.5s; 
-  }
-  
-  
-  .overlay-content {
-    position: relative;
-    top: 25%; 
-    width: 100%; 
-    text-align: center; 
-    margin-top: 30px; 
-  }
-  
-  .overlay a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 36px;
-    color: #818181;
-    display: block; 
-    transition: 0.3s; 
-  }
-  
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
 
-  .overlay a:hover, .overlay a:focus {
-    color: #f1f1f1;
-  }
-  
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
 
-  .overlay .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
-  }
-  .tgg{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-   i{
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+.tgg {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  i {
     font-size: 30px;
-   }
   }
-  @media (min-width:1000px) {
-    .overlay{
-        display: none;
-    }
-    .tgg{
-        display: none;
-    }
-    
+}
+@media (min-width: 1000px) {
+  .overlay {
+    display: none;
   }
+  .tgg {
+    display: none;
+  }
+}
 
 //   navbar end---------------------------
 
+#first {
+  padding-top: 200px;
+
+  h1 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    color: #000000;
+    text-align: center;
+  }
+}
