@@ -13,10 +13,59 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
         integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./css/compressed/macbok-11.min.css" />
     <link rel="stylesheet" href="./css/compressed/macbok-13.min.css">
 </head>
 
 <body>
+    <header>
+        <section id="top-nav">
+            <div class="container"><a href="#">RU </a> <a href="#">/ UZB</a></div>
+        </section>
+        <nav id="navbar">
+            <div class="container">
+                <div class="box">
+                    <div class="logo">
+                        <a href="./index.html">MILANDI</a>
+                    </div>
+                    <div class="links">
+                        <ul>
+                            <li><a href="./index.html">Главная</a></li>
+                            <li><a href="#">O нас</a></li>
+                            <li><a href="#">Категории</a></li>
+                            <li><a href="#">Сотрудничество</a></li>
+                        </ul>
+                        <div class="exit">
+                            <button>Войти</button>
+                            <button>Зарегистрироваться</button>
+                            <img src="./images/macbok-11/chelak.svg" alt="" />
+                        </div>
+                    </div>
+                </div>
+
+                <div id="myNav" class="overlay">
+
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+
+                    <div class="overlay-content">
+                        <a href="#">Главная</a>
+                        <a href="#">O нас</a>
+                        <a href="#">Категории</a>
+                        <a href="#">Сотрудничество</a>
+                        <a href="#">Войти</a>
+                        <a href="#">Зарегистрироваться</a>
+                    </div>
+                </div>
+
+
+                <div class="tgg">
+                    <div> <span onclick="openNav()"> <i class="fa fa-bars"></i></span></div>
+                    <div><img src="./images/macbok-11/lll.svg" alt=""></div>
+                </div>
+            </div>
+        </nav>
+    </header>
     <main>
         <section id="main-top">
             <div class="container one__section">
@@ -168,6 +217,15 @@
                 </div>
             </div>
         </section>
+
+        <section>
+            <div class="container top__kategoriya">
+                <h2>Лучшие категории</h2>
+                <div class="oxirgi">
+                    <img style="width: 100%;" src="./images/macbok-13/rasm.png" alt="">
+                </div>
+            </div>
+        </section>
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
         integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
@@ -203,9 +261,30 @@
 
         })
     </script>
-    <script type="text/javascript">
-
+    <script>
+        $('.owlcccarousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            responsiveClass: true,
+            items: 2,
+            responsive: {
+                0: {
+                    items: 2,
+                    nav: true
+                },
+                600: {
+                    items: 3,
+                    nav: false
+                },
+                1000: {
+                    items: 4,
+                    nav: true,
+                    loop: false
+                }
+            }
+        })
     </script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

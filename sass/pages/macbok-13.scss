@@ -7,7 +7,7 @@ body {
 }
 
 #main-top {
-    margin-top: 40px;
+    padding-top: 170px;
 }
 
 
@@ -344,7 +344,7 @@ body {
     }
 }
 
-.zerikdim{
+.zerikdim {
     text-align: center;
     padding: 0 13px;
 }
@@ -372,7 +372,8 @@ body {
     /* Black */
     color: #000000;
     display: none;
-    &:hover{
+
+    &:hover {
         cursor: progress;
     }
 }
@@ -405,6 +406,24 @@ body {
                 font-size: 10px;
             }
         }
+    }
+}
+
+.top__kategoriya {
+    margin-top: 25px;
+    & h2 {
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 34px;
+        line-height: 140%;
+        /* or 48px */
+
+        letter-spacing: 0.25px;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+
+        color: #000000;
     }
 }
 
@@ -484,11 +503,11 @@ body {
 }
 
 @media (min-width: 700px) {
-    .tovarlar1{
+    .tovarlar1 {
         gap: 30px;
     }
 
-    .krz__btn{
+    .krz__btn {
         display: block;
     }
 
