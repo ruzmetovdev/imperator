@@ -108,6 +108,10 @@ label {
   display: none;
 }
 
+#pays {
+  padding-top: 150px;
+}
+
 header {
   position: fixed;
   width: 100%;
