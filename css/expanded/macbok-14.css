@@ -100,7 +100,6 @@ header {
 }
 #navbar .box .links ul a:hover {
   color: #ffc000;
-  text-decoration: underline;
   transition: 0.3s;
 }
 #navbar .box .exit {
