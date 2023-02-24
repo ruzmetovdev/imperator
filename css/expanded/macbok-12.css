@@ -62,6 +62,10 @@ body {
   width: 100%;
 }
 
+#img {
+  padding-top: 100px;
+}
+
 header {
   position: fixed;
   width: 100%;

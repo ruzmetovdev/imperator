@@ -13,10 +13,60 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
         integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <link rel="stylesheet" href="./css/compressed/macbok-11.min.css" />
     <link rel="stylesheet" href="./css/compressed/macbok-13.min.css">
 </head>
 
 <body>
+    <header>
+        <section id="top-nav">
+            <div class="container"><a href="#">RU </a> <a href="#">/ UZB</a></div>
+        </section>
+        <nav id="navbar">
+            <div class="container">
+                <div class="box">
+                    <div class="logo">
+                        <a href="./index.html">MILANDI</a>
+                    </div>
+                    <div class="links">
+                        <ul>
+                            <li><a href="./index.html">Главная</a></li>
+                            <li><a href="#">O нас</a></li>
+                            <li><a href="#">Категории</a></li>
+                            <li><a href="#">Сотрудничество</a></li>
+                        </ul>
+                        <div class="exit">
+                            <button>Войти</button>
+                            <button>Зарегистрироваться</button>
+                            <img src="./images/macbok-11/chelak.svg" alt="" />
+                        </div>
+                    </div>
+                </div>
+
+                <div id="myNav" class="overlay">
+
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+
+                    <div class="overlay-content">
+                        <a href="#">Главная</a>
+                        <a href="#">O нас</a>
+                        <a href="#">Категории</a>
+                        <a href="#">Сотрудничество</a>
+                        <a href="#">Войти</a>
+                        <a href="#">Зарегистрироваться</a>
+                    </div>
+                </div>
+
+
+                <div class="tgg">
+                    <div> <span onclick="openNav()"> <i class="fa fa-bars"></i></span></div>
+                    <div><img src="./images/macbok-11/lll.svg" alt=""></div>
+                </div>
+            </div>
+        </nav>
+    </header>
     <main>
         <section id="main-top">
             <div class="container one__section">
@@ -35,6 +85,12 @@
                             <img src="./images/macbok-13/imagetop.png" alt="">
                         </div>
 
+                    </div>
+                    <div class="nav_top--bottom">
+                        <img class="rasmlar" src="./images/macbok-13/imagetop.png" alt="">
+                        <img class="rasmlar" src="./images/macbok-13/imagetop.png" alt="">
+                        <img class="rasmlar" src="./images/macbok-13/imagetop.png" alt="">
+                        <img class="rasmlar" src="./images/macbok-13/imagetop.png" alt="">
                     </div>
                 </div>
                 <div class="main__top--right">
@@ -62,47 +118,130 @@
                         <div class="size__box">
                             <div class="ap-tab">
                                 <ul class="ap-tab-list">
-                                  <li class="ap-tab-item"><a class="ap-tab-link " href="#">28</a></li>
-                                  <li class="ap-tab-item"><a class="ap-tab-link " href="#">30</a></li>
-                                  <li class="ap-tab-item"><a class="ap-tab-link " href="#">32</a></li>
-                                  <li class="ap-tab-item"><a class="ap-tab-link " href="#">34</a></li>
-                                  <li class="ap-tab-item"><a class="ap-tab-link " href="#">36</a></li>
+                                    <li class="ap-tab-item"><a class="ap-tab-link " href="#">28</a></li>
+                                    <li class="ap-tab-item"><a class="ap-tab-link " href="#">30</a></li>
+                                    <li class="ap-tab-item"><a class="ap-tab-link " href="#">32</a></li>
+                                    <li class="ap-tab-item"><a class="ap-tab-link " href="#">34</a></li>
+                                    <li class="ap-tab-item"><a class="ap-tab-link " href="#">36</a></li>
                                 </ul>
-                              </div>
-                              <div class="ap-tab-container">
+                            </div>
+                            <div class="ap-tab-container">
                                 <div class="ap-tab-content">
-                                  
+
                                 </div>
                                 <div class="ap-tab-content">
-                                  
+
                                 </div>
                                 <div class="ap-tab-content">
-                                  
+
                                 </div>
-                              </div>
+                            </div>
                         </div>
                     </div>
                     <button class="btn1">Добавить в корзину</button>
                     <button class="btn2">Быстрая покупка</button>
                     <div class="hizmatlar">
                         <h2>Преимущества</h2>
-                        <div class="hizmat__box">
-                            <img src="./images/macbok-13/ic_delivery.svg" alt=""> <span>Delivery in 7 days</span>                      
-                        </div>
-                        <div class="hizmat__box">
-                            <img src="./images/macbok-13/ic_medal.svg" alt=""> <span>Trusted seller</span>
-                        </div>
-                        <div class="hizmat__box">
-                            <img src="./images/macbok-13/ic_safe.svg" alt=""> <span>90-day Buyer Protection</span>
-                        </div>
-                        <div class="hizmat__box">
-                            <img src="./images/macbok-13/ic_file_checked.svg" alt=""> <span>Aviable to order</span>
+                        <div class="dastafka">
+                            <div class="hizmat__box">
+                                <img src="./images/macbok-13/ic_delivery.svg" alt=""> <span>Delivery in 7 days</span>
+                            </div>
+                            <div class="hizmat__box">
+                                <img src="./images/macbok-13/ic_medal.svg" alt=""> <span>Trusted seller</span>
+                            </div>
+                            <div class="hizmat__box">
+                                <img src="./images/macbok-13/ic_safe.svg" alt=""> <span>90-day Buyer Protection</span>
+                            </div>
+                            <div class="hizmat__box">
+                                <img src="./images/macbok-13/ic_file_checked.svg" alt=""> <span>Aviable to order</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
+        <section>
+            <div class="container tovarlar">
+                <h2>Похжие товары</h2>
+                <div class="tovarlar1">
+                    <div class="sariq">
+                        <img src="./images/macbok-13/ssvv.png" alt="">
+                        <h3>Lorem ipsum dolor sit amet</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit sed odio sed nascetur.</p>
+
+                        <div class="yulduz__narx">
+                            <img src="./images/macbok-13/Group 25.svg" alt="">
+                            <h4>255 Y.E.</h4>
+                        </div>
+                        <div class="zerikdim">
+                            <button class="krz__btn">Добавить в корзину</button>
+                        </div>
+                    </div>
+                    <div class="sariq">
+                        <img src="./images/macbok-13/ssvv.png" alt="">
+                        <h3>Lorem ipsum dolor sit amet</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit sed odio sed nascetur.</p>
+
+                        <div class="yulduz__narx">
+                            <img src="./images/macbok-13/Group 25.svg" alt="">
+                            <h4>255 Y.E.</h4>
+                        </div>
+                        <div class="zerikdim">
+                            <button class="krz__btn">Добавить в корзину</button>
+                        </div>
+                    </div>
+                    <div class="sariq sariq1">
+                        <img src="./images/macbok-13/ssvv.png" alt="">
+                        <h3>Lorem ipsum dolor sit amet</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit sed odio sed nascetur.</p>
+                        <div class="yulduz__narx">
+                            <img src="./images/macbok-13/Group 25.svg" alt="">
+                            <h4>255 Y.E.</h4>
+                        </div>
+                        <div class="zerikdim">
+                            <button class="krz__btn">Добавить в корзину</button>
+                        </div>
+                    </div>
+                    <div class="sariq sariq2">
+                        <img src="./images/macbok-13/ssvv.png" alt="">
+                        <h3>Lorem ipsum dolor sit amet</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit sed odio sed nascetur.</p>
+                        <div class="yulduz__narx">
+                            <img src="./images/macbok-13/Group 25.svg" alt="">
+                            <h4>255 Y.E.</h4>
+                        </div>
+                        <div class="zerikdim">
+                            <button class="krz__btn">Добавить в корзину</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container top__kategoriya">
+                <h2>Лучшие категории</h2>
+                <div class="oxirgi1">
+                    <div class="oxirgi">
+                        <img style="width: 100%;" src="./images/macbok-13/qizil.png" alt="">
+                        <p>Women's wear</p>
+                    </div>
+                    <div class="oxirgi">
+                        <img style="width: 100%;" src="./images/macbok-13/qizil.png" alt="">
+                        <p>Men's wear</p>
+                    </div>
+                    <div class="oxirgi oxirgi11">
+                        <img style="width: 100%;" src="./images/macbok-13/qizil.png" alt="">
+                        <p>Men's wear</p>
+                    </div>
+                    <div class="oxirgi oxirgi2">
+                        <img style="width: 100%;" src="./images/macbok-13/qizil.png" alt="">
+                        <p>Men's wear</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
         integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
@@ -110,7 +249,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://cdn.jsdelivr.net/gh/abdulazizcreator/ap-tab/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/abdulazizcreator/ap-tab/main.js"></script>
     <script>
         $('.owl-carousel').owlCarousel({
             loop: true,
@@ -138,9 +277,30 @@
 
         })
     </script>
-    <script type="text/javascript">
-        
+    <script>
+        $('.owlcccarousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            responsiveClass: true,
+            items: 2,
+            responsive: {
+                0: {
+                    items: 2,
+                    nav: true
+                },
+                600: {
+                    items: 3,
+                    nav: false
+                },
+                1000: {
+                    items: 4,
+                    nav: true,
+                    loop: false
+                }
+            }
+        })
     </script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
