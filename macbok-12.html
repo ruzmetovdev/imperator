@@ -8,13 +8,72 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="icon" href="./images/macbok-12/Без названия.jfif" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/compressed/macbok-12.min.css" />
   </head>
   <body>
-    <header></header>
+    <header>
+      <section id="top-nav">
+        <div class="container"><a href="#">RU </a> <a href="#">/ UZB</a></div>
+      </section>
+      <nav id="navbar">
+        <div class="container">
+          <div class="box">
+            <div class="logo">
+              <a href="./index.html">MILANDI</a>
+            </div>
+            <div class="links">
+              <ul>
+                <li><a href="./index.html">Главная</a></li>
+                <li><a href="#">O нас</a></li>
+                <li><a href="#">Категории</a></li>
+                <li><a href="#">Сотрудничество</a></li>
+              </ul>
+              <div class="exit">
+                <button>Войти</button>
+                <button>Зарегистрироваться</button>
+                <img src="./images/macpro-9/ic_cart.svg" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+              >&times;</a
+            >
+
+            <div class="overlay-content">
+              <a href="#">Главная</a>
+              <a href="#">O нас</a>
+              <a href="#">Категории</a>
+              <a href="#">Сотрудничество</a>
+              <a href="#">Войти</a>
+              <a href="#">Зарегистрироваться</a>
+            </div>
+          </div>
+
+          <div class="tgg">
+            <div>
+              <span onclick="openNav()"> <i class="fa fa-bars"></i></span>
+            </div>
+            <div><img src="./images/macbok-11/lll.svg" alt="" /></div>
+          </div>
+        </div>
+      </nav>
+    </header>
     <main>
       <section id="img">
         <div class="container">
@@ -23,50 +82,51 @@
               <h1>Категории</h1>
             </div>
             <div class="img__container--box">
-                <div class="items">
-                    <img src="./images/macbok-12/first.svg" alt="">
-                    <h4>Women’s wear</h4>
-                </div>
-                <div class="items">
-                    <img src="./images/macbok-12/second.svg" alt="">
-                    <h4>Men’s wear</h4>
-                </div>
-                <div class="items">
-                    <img src="./images/macbok-12/thirth.svg" alt="">
-                    <h4>Kid’s wear</h4>
-                </div>
-                <div class="items">
-                    <img src="./images/macbok-12/fourth.svg" alt="">
-                    <h4>Shoes</h4>
-                </div>
-                <div class="items">
-                    <img src="./images/macbok-12/5.svg" alt="">
-                    <h4>Сумки</h4>
-                </div>
-                <div class="items">
-                    <img src="./images/macbok-12/6.svg" alt="">
-                    <h4>Accessories</h4>
-                </div>
-                <div class="items">
-                    <img src="./images/macbok-12/7.svg" alt="">
-                    <h4>Underwear</h4>
-                </div>
-                <div class="items">
-                    <img src="./images/macbok-12/8.svg" alt="">
-                    <h4>Decorations</h4>
-                </div>
-                <div class="items">
-                    <img src="./images/macbok-12/9.svg" alt="">
-                    <h4>Home textiles</h4>
-                </div>
-                <div class="items">
-                    <img src="./images/macbok-12/10.svg" alt="">
-                    <h4>Wholesale</h4>
-                </div>
+              <div class="items">
+                <img src="./images/macbok-12/first.svg" alt="" />
+                <h4>Women’s wear</h4>
+              </div>
+              <div class="items">
+                <img src="./images/macbok-12/second.svg" alt="" />
+                <h4>Men’s wear</h4>
+              </div>
+              <div class="items">
+                <img src="./images/macbok-12/thirth.svg" alt="" />
+                <h4>Kid’s wear</h4>
+              </div>
+              <div class="items">
+                <img src="./images/macbok-12/fourth.svg" alt="" />
+                <h4>Shoes</h4>
+              </div>
+              <div class="items">
+                <img src="./images/macbok-12/5.svg" alt="" />
+                <h4>Сумки</h4>
+              </div>
+              <div class="items">
+                <img src="./images/macbok-12/6.svg" alt="" />
+                <h4>Accessories</h4>
+              </div>
+              <div class="items">
+                <img src="./images/macbok-12/7.svg" alt="" />
+                <h4>Underwear</h4>
+              </div>
+              <div class="items">
+                <img src="./images/macbok-12/8.svg" alt="" />
+                <h4>Decorations</h4>
+              </div>
+              <div class="items">
+                <img src="./images/macbok-12/9.svg" alt="" />
+                <h4>Home textiles</h4>
+              </div>
+              <div class="items">
+                <img src="./images/macbok-12/10.svg" alt="" />
+                <h4>Wholesale</h4>
+              </div>
             </div>
           </div>
         </div>
       </section>
     </main>
+    <script src="./js/main.js"></script>
   </body>
 </html>

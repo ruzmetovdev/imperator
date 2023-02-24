@@ -1,6 +1,7 @@
 @use "../global";
 
 @import url("https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300;400;500;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 
 * {
   h1,
@@ -20,8 +21,174 @@ body {
   font-family: "M PLUS 1p", sans-serif;
 }
 
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+#top-nav {
+  background-color: #000;
+  padding: 13px 0;
+  a {
+    color: white;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    &:hover {
+      color: rgba(255, 255, 255, 0.3);
+      transition: 0.3s;
+    }
+  }
+}
+
+#navbar {
+  background-color: #fff;
+  box-shadow: 0px 8px 22px -6px rgba(24, 39, 75, 0.12),
+    0px 14px 64px -4px rgba(24, 39, 75, 0.12);
+  transition: 0.4s;
+  .box {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    .logo {
+      a {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 23px;
+        color: #0d0d0d;
+      }
+    }
+    .links {
+      display: flex;
+      align-items: center;
+      gap: 231px;
+      ul {
+        display: flex;
+        gap: 25px;
+        padding-top: 10px;
+        a {
+          font-family: "Poppins", sans-serif;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 140%;
+          color: #000000;
+          &:hover {
+            color: #ffc000;
+            // text-decoration: underline;
+            transition: 0.3s;
+          }
+        }
+      }
+    }
+    .exit {
+      display: flex;
+      align-items: center;
+      gap: 31px;
+      button {
+        padding: 4px 8px;
+        border: 0;
+        border-radius: 4px;
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 140%;
+        color: #000000;
+        &:hover {
+          background: #ffc000;
+          transition: 0.3s;
+        }
+      }
+    }
+    @media (min-width: 1000px) {
+      & {
+        display: flex;
+      }
+    }
+  }
+}
+nav {
+  padding: 25px 0;
+}
+
+.navbar-shrink {
+  padding: 8px 0;
+}
+
+// toggle----------------
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+.tgg {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  i {
+    font-size: 30px;
+  }
+}
+@media (min-width: 1000px) {
+  .overlay {
+    display: none;
+  }
+  .tgg {
+    display: none;
+  }
+}
+
+//   navbar end---------------------------
+
+// main
+
+main {
+  font-family: "M PLUS 1p", sans-serif;
+}
+
 #mag {
-  padding: 112px 0px 64px 0px;
+  padding: 190px 0px 64px 0px;
   background: #fafafa;
   .mag__container {
     .mag__cont--top {
@@ -52,13 +219,13 @@ body {
     .mag__cont--bottom {
       display: grid;
       grid-template-columns: repeat(2, auto);
-      grid-column-gap: 30px;
+      grid-column-gap: 10px;
       .bottom-left {
         .acc-logo {
           display: flex;
           align-items: center;
           padding-left: 17px;
-          width: 100%;
+          width: 264px;
           height: 64px;
           background: #fff;
           border-bottom: 2px solid #f4f5f7;
@@ -124,7 +291,8 @@ body {
       .bottom-right {
         display: grid;
         grid-template-columns: repeat(3, auto);
-        grid-column-gap: 30px;
+        grid-column-gap: 10px;
+        grid-row-gap: 30px;
         .box {
           .box-img {
             margin-bottom: 8px;
@@ -140,11 +308,29 @@ body {
               font-feature-settings: "pnum" on, "lnum" on;
               color: #000000;
             }
+            .stars-box {
+              display: flex;
+              justify-content: space-between;
+              p {
+                padding-top: 10px;
+                font-weight: 700;
+                font-size: 10px;
+                line-height: 140%;
+                letter-spacing: 1.5px;
+                text-transform: uppercase;
+                font-feature-settings: "pnum" on, "lnum" on;
+                color: #000000;
+              }
+            }
           }
         }
       }
     }
   }
+}
+
+#mag-2 {
+  display: none;
 }
 
 // media
@@ -159,6 +345,9 @@ body {
           justify-content: center;
         }
         .bottom-left {
+          .acc-logo {
+            width: 100%;
+          }
           .acc {
             width: 100%;
           }
@@ -178,6 +367,54 @@ body {
           justify-content: center;
         }
       }
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  #mag {
+    .mag__container {
+      .mag__cont--bottom {
+        display: grid;
+        grid-template-columns: auto;
+        grid-row-gap: 30px;
+        .bottom-right {
+          display: grid;
+          grid-template-columns: repeat(2, auto);
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 615px) {
+  #mag {
+    .mag__container {
+      .mag__cont--bottom {
+        .bottom-right {
+          display: grid;
+          grid-template-columns: repeat(1, auto);
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 376px) {
+  #mag {
+    display: none;
+  }
+  #mag-2 {
+    display: inline-block;
+    padding: 99px 0px 32px 0px;
+    background: #fafafa;
+    .mag-2__cont--top {
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      justify-content: center;
+      grid-column-gap: 23px;
     }
   }
 }

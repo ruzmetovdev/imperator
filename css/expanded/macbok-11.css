@@ -43,6 +43,7 @@ header {
 }
 #top-nav a:hover {
   color: rgba(255, 255, 255, 0.3);
+  transition: 0.3s;
 }
 
 #navbar {
@@ -70,9 +71,10 @@ header {
 #navbar .box .links ul {
   display: flex;
   gap: 25px;
+  padding-top: 10px;
 }
 #navbar .box .links ul a {
-  font-family: "Montserrat";
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -80,8 +82,8 @@ header {
   color: #000000;
 }
 #navbar .box .links ul a:hover {
-  color: #971010;
-  text-decoration: underline;
+  color: #ffc000;
+  transition: 0.3s;
 }
 #navbar .box .exit {
   display: flex;
@@ -92,7 +94,7 @@ header {
   padding: 4px 8px;
   border: 0;
   border-radius: 4px;
-  font-family: "Montserrat";
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -101,6 +103,7 @@ header {
 }
 #navbar .box .exit button:hover {
   background: #ffc000;
+  transition: 0.3s;
 }
 @media (min-width: 1000px) {
   #navbar .box {
@@ -146,7 +149,8 @@ nav {
   transition: 0.3s;
 }
 
-.overlay a:hover, .overlay a:focus {
+.overlay a:hover,
+.overlay a:focus {
   color: #f1f1f1;
 }
 
