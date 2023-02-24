@@ -351,6 +351,36 @@ body {
   cursor: progress;
 }
 
+.oxirgi1 {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.oxirgi {
+  width: 50%;
+}
+.oxirgi p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+  /* identical to box height, or 20px */
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.1px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  /* Black */
+  color: #0D0D0D;
+}
+
+.oxirgi11 {
+  display: none;
+}
+
+.oxirgi2 {
+  display: none;
+}
+
 @media (min-width: 530px) {
   .sariq {
     background: #FFFFFF;
@@ -387,6 +417,8 @@ body {
   font-size: 34px;
   line-height: 140%;
   /* or 48px */
+  margin-top: 20px;
+  margin-bottom: 15px;
   letter-spacing: 0.25px;
   font-feature-settings: "pnum" on, "lnum" on;
   color: #000000;
@@ -394,6 +426,7 @@ body {
 
 @media (min-width: 680px) {
   .one__section {
+    padding-top: 60px;
     display: flex;
     justify-content: space-between;
   }
@@ -406,6 +439,18 @@ body {
   }
   .one__section .main__top--right h2 {
     font-size: 34px;
+  }
+  .oxirgi11 {
+    display: block;
+  }
+  .oxirgi {
+    margin-top: 60px;
+  }
+  .oxirgi p {
+    font-size: 25px;
+  }
+  .tovarlar {
+    margin-top: 80px;
   }
   .container-box {
     font-style: 16px;
@@ -453,6 +498,10 @@ body {
 @media (min-width: 700px) {
   .tovarlar1 {
     gap: 30px;
+    margin-top: 30px;
+  }
+  .top__kategoriya h2 {
+    margin-top: 60px;
   }
   .krz__btn {
     display: block;
@@ -492,6 +541,9 @@ body {
 @media (min-width: 900px) {
   .sariq {
     width: 25%;
+  }
+  .oxirgi2 {
+    display: block;
   }
   .sariq2 {
     display: block;
