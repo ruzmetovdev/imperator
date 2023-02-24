@@ -1,0 +1,42 @@
+@use "../global";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+.read-more-container {
+    display: flex;
+    flex-direction: column;
+    color: #111;
+    gap: 1rem;
+}
+
+.container-box {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    /* or 22px */
+
+    letter-spacing: 0.44px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+
+    /* Black */
+
+    color: #000000;
+}
+
+.read-more-btn {
+    color: #0984e3;
+}
+
+.read-more-btn:hover {
+    cursor: pointer;
+}
+
+.read-more-text {
+    display: none;
+}
+
+.read-more-text--show {
+    display: inline;
+}
