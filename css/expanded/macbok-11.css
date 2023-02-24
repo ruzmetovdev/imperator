@@ -289,6 +289,64 @@ nav {
   }
 }
 
+#phone {
+  padding-top: 150px;
+}
+#phone .obi {
+  padding-bottom: 50px;
+  margin-bottom: 100px;
+  background: radial-gradient(100% 1071.07% at 0% 0%, #0f0d2b 0%, #0c0926 100%);
+}
+@media (min-width: 900px) {
+  #phone .obi {
+    display: flex;
+    gap: 50px;
+  }
+}
+#phone .obi h1 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 140%;
+  letter-spacing: 0.25px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #ffffff;
+  padding-top: 40px;
+}
+#phone .obi p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.44px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #ffffff;
+  margin-top: 24px;
+}
+#phone .obi .ter {
+  margin-top: 40px;
+}
+@media (min-width: 700px) {
+  #phone .obi .ter {
+    display: flex;
+    gap: 30px;
+  }
+}
+#phone .obi .p {
+  margin-top: -150px;
+}
+#phone .obi .p img {
+  width: 100%;
+}
+@media (min-width: 900px) {
+  #phone .obi .p img {
+    width: 330px;
+    height: 469px;
+  }
+}
+
 #forth {
   padding-top: 100px;
 }

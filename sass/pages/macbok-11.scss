@@ -272,6 +272,63 @@ nav {
   }
 }
 
+#phone {
+   padding-top: 150px;
+    .obi {
+      @media (min-width: 900px) {
+        display: flex;
+        gap: 50px;
+      }
+      padding-bottom: 50px;
+      margin-bottom: 100px;
+      background: radial-gradient(
+        100% 1071.07% at 0% 0%,
+        #0f0d2b 0%,
+        #0c0926 100%
+      );
+      h1 {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 34px;
+        line-height: 140%;
+        letter-spacing: 0.25px;
+        font-feature-settings: "pnum" on, "lnum" on;
+        color: #ffffff;
+        padding-top: 40px;
+      }
+      p {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        letter-spacing: 0.44px;
+        font-feature-settings: "pnum" on, "lnum" on;
+        color: #ffffff;
+        margin-top: 24px;
+      }
+      .ter {
+        margin-top: 40px;
+  
+        @media (min-width: 700px) {
+          display: flex;
+          gap: 30px;
+        }
+      }
+      .p {
+        margin-top: -150px;
+        img {
+          width: 100%;
+          @media (min-width: 900px) {
+            width: 330px;
+            height: 469px;
+          }
+        }
+      }
+    }
+  }
+
   #forth{
     padding-top: 100px;
     iframe{
