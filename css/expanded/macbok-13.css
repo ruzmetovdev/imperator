@@ -24,8 +24,12 @@ a {
   text-decoration: none;
 }
 
+body {
+  background: #E5E5E5;
+}
+
 #main-top {
-  margin-top: 40px;
+  padding-top: 170px;
 }
 
 .owl-carousel .owl-nav button.owl-next,
@@ -197,13 +201,13 @@ a {
   font-feature-settings: "pnum" on, "lnum" on;
   color: #000000;
 }
-.main__top--right .hizmatlar .hizmat__box {
-  margin-bottom: 10 px;
+.main__top--right .hizmatlar .dastafka .hizmat__box {
+  margin-bottom: 10px;
   display: flex;
   align-items: center;
   gap: 20px;
 }
-.main__top--right .hizmatlar .hizmat__box span {
+.main__top--right .hizmatlar .dastafka .hizmat__box span {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -216,8 +220,213 @@ a {
   color: #0D0D0D;
 }
 
+.nav_top--bottom {
+  width: 100%;
+  display: flex;
+  display: none;
+}
+.nav_top--bottom .rasimlar {
+  width: 25%;
+}
+
+.tovarlar h2 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 140%;
+  text-align: center;
+  /* identical to box height, or 48px */
+  letter-spacing: 0.25px;
+  margin-top: 35px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+}
+
+.tovarlar1 {
+  margin-top: 15px;
+  display: flex;
+  gap: 15px;
+}
+
+.sariq2 {
+  display: none;
+}
+
+.sariq1 {
+  display: none;
+}
+
+.sariq {
+  background: #FFFFFF;
+  border-radius: 12px;
+  width: 50%;
+}
+.sariq img {
+  width: 100%;
+}
+.sariq p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 140%;
+  /* or 17px */
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.4px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  padding: 0 13px;
+  /* Black */
+  display: none;
+  color: #000000;
+}
+.sariq h3 {
+  margin-top: 25px;
+  padding: 0 13px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 140%;
+  /* or 20px */
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.1px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  /* Black */
+  color: #000000;
+}
+.sariq .yulduz__narx {
+  padding: 0 13px;
+  position: relative;
+}
+.sariq .yulduz__narx img {
+  position: absolute;
+  width: 50%;
+  top: -60px;
+}
+.sariq .yulduz__narx h4 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 140%;
+  /* identical to box height, or 14px */
+  padding-bottom: 12px;
+  letter-spacing: 1.5px;
+  padding-top: 7px;
+  text-transform: uppercase;
+  font-feature-settings: "pnum" on, "lnum" on;
+  /* Black */
+  color: #000000;
+}
+
+.zerikdim {
+  text-align: center;
+  padding: 0 13px;
+}
+
+.krz__btn {
+  width: 100%;
+  padding: 0 13px;
+  height: 36px;
+  border: none;
+  background: #FFC000;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 5px;
+  line-height: 140%;
+  cursor: pointer;
+  /* identical to box height, or 20px */
+  font-family: "Montserrat", sans-serif;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+  font-feature-settings: "pnum" on, "lnum" on;
+  /* Black */
+  color: #000000;
+  display: none;
+}
+.krz__btn:hover {
+  cursor: progress;
+}
+
+.oxirgi1 {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.oxirgi {
+  width: 50%;
+}
+.oxirgi p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+  /* identical to box height, or 20px */
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.1px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  /* Black */
+  color: #0D0D0D;
+}
+
+.oxirgi11 {
+  display: none;
+}
+
+.oxirgi2 {
+  display: none;
+}
+
+@media (min-width: 530px) {
+  .sariq {
+    background: #FFFFFF;
+    border-radius: 12px;
+    width: 50%;
+  }
+  .sariq img {
+    width: 100%;
+  }
+  .sariq h3 {
+    margin-top: 35px;
+  }
+  .sariq .yulduz__narx {
+    padding: 0 13px;
+    position: relative;
+  }
+  .sariq .yulduz__narx img {
+    position: absolute;
+    width: 50%;
+    top: -50px;
+  }
+  .sariq .yulduz__narx h4 {
+    font-size: 10px;
+  }
+}
+.top__kategoriya {
+  margin-top: 25px;
+}
+.top__kategoriya h2 {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 140%;
+  /* or 48px */
+  margin-top: 20px;
+  margin-bottom: 15px;
+  letter-spacing: 0.25px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+}
+
 @media (min-width: 680px) {
   .one__section {
+    padding-top: 60px;
     display: flex;
     justify-content: space-between;
   }
@@ -231,6 +440,18 @@ a {
   .one__section .main__top--right h2 {
     font-size: 34px;
   }
+  .oxirgi11 {
+    display: block;
+  }
+  .oxirgi {
+    margin-top: 60px;
+  }
+  .oxirgi p {
+    font-size: 25px;
+  }
+  .tovarlar {
+    margin-top: 80px;
+  }
   .container-box {
     font-style: 16px;
     padding-top: 0px;
@@ -243,5 +464,88 @@ a {
     line-height: 140%;
     font-feature-settings: "pnum" on, "lnum" on;
     color: #000;
+  }
+  .dastafka {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .nav_top--bottom {
+    display: block;
+    gap: 14px;
+  }
+  .nav_top--bottom img {
+    width: 24.4%;
+  }
+  .owl-carousel .owl-nav button.owl-next,
+  .owl-carousel .owl-nav button.owl-prev,
+  .owl-carousel button.owl-dot {
+    display: none;
+  }
+  .owl-theme .owl-dots .owl-dot span {
+    display: none;
+  }
+  .owl-theme .owl-dots .owl-dot {
+    display: none;
+  }
+  .btn1 {
+    margin-top: 60px !important;
+    width: 90% !important;
+  }
+  .btn2 {
+    width: 90% !important;
+  }
+}
+@media (min-width: 700px) {
+  .tovarlar1 {
+    gap: 30px;
+    margin-top: 30px;
+  }
+  .top__kategoriya h2 {
+    margin-top: 60px;
+  }
+  .krz__btn {
+    display: block;
+  }
+  .sariq {
+    width: 33%;
+  }
+  .sariq1 {
+    display: block;
+  }
+  .sariq img {
+    width: 100%;
+  }
+  .sariq p {
+    display: block;
+  }
+  .sariq h3 {
+    margin-top: 7px;
+    font-size: 20px;
+  }
+  .sariq .yulduz__narx {
+    padding: 0 13px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .sariq .yulduz__narx img {
+    position: relative;
+    width: 50%;
+    top: 0px;
+  }
+  .sariq .yulduz__narx h4 {
+    font-size: 13px;
+  }
+}
+@media (min-width: 900px) {
+  .sariq {
+    width: 25%;
+  }
+  .oxirgi2 {
+    display: block;
+  }
+  .sariq2 {
+    display: block;
   }
 }
