@@ -744,6 +744,7 @@ body {
   #footer-2 {
     display: inline-block;
     padding: 36px 0px 32px 0px;
+    font-family: "M PLUS 1p", sans-serif;
   }
   #footer-2 .footer__container .footer__cont--top p {
     padding-bottom: 32px;
